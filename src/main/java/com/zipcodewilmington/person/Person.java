@@ -5,10 +5,12 @@ package com.zipcodewilmington.person;
  */
 public class Person {
 
-    private String name = "";
-    private int age = Integer.MAX_VALUE;
+    private String name;
+    private int age;
 
     public Person() {
+        name = "";
+        age = Integer.MAX_VALUE;
     }
 
     public Person(int age) {
@@ -19,9 +21,11 @@ public class Person {
         this.name = name;
     }
 
+
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+
     }
 
     public void setName(String name) {
